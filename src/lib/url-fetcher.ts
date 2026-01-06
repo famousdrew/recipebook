@@ -1,4 +1,5 @@
 export async function fetchUrlContent(url: string): Promise<string> {
+  console.log("[url-fetcher] Fetching URL:", url);
   const response = await fetch(url, {
     headers: {
       "User-Agent":
@@ -8,10 +9,12 @@ export async function fetchUrlContent(url: string): Promise<string> {
   });
 
   if (!response.ok) {
+    console.error("[url-fetcher] Fetch failed:", { url, status: response.status, statusText: response.statusText });
     throw new Error(`Failed to fetch URL: ${response.status} ${response.statusText}`);
   }
 
   const html = await response.text();
+  console.log("[url-fetcher] Fetch successful", { url, htmlLength: html.length });
   return extractTextFromHtml(html);
 }
 
