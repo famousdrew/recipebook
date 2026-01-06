@@ -75,6 +75,38 @@ export function RecipeDetail({ recipe }: RecipeDetailProps) {
   }
 
   function parseAmount(amount: string): number | null {
+    // Unicode fraction mapping
+    const unicodeFractions: Record<string, number> = {
+      '½': 0.5,
+      '⅓': 1/3,
+      '⅔': 2/3,
+      '¼': 0.25,
+      '¾': 0.75,
+      '⅕': 0.2,
+      '⅖': 0.4,
+      '⅗': 0.6,
+      '⅘': 0.8,
+      '⅙': 1/6,
+      '⅚': 5/6,
+      '⅛': 0.125,
+      '⅜': 0.375,
+      '⅝': 0.625,
+      '⅞': 0.875,
+    };
+
+    // Handle standalone unicode fractions like "½"
+    if (unicodeFractions[amount] !== undefined) {
+      return unicodeFractions[amount];
+    }
+
+    // Handle mixed unicode fractions like "1½" or "2 ½"
+    for (const [frac, value] of Object.entries(unicodeFractions)) {
+      const mixedUnicodeMatch = amount.match(new RegExp(`^(\\d+)\\s*${frac}$`));
+      if (mixedUnicodeMatch) {
+        return parseInt(mixedUnicodeMatch[1]) + value;
+      }
+    }
+
     // Handle fractions like "1/2" or "3/4"
     const fractionMatch = amount.match(/^(\d+)\/(\d+)$/);
     if (fractionMatch) {
