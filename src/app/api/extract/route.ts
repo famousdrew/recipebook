@@ -2,6 +2,18 @@ import { NextRequest, NextResponse } from "next/server";
 import { extractRecipeFromUrl } from "@/lib/recipe-extractor";
 import { prisma } from "@/lib/prisma";
 
+// CORS headers for Chrome extension
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type",
+};
+
+// Handle CORS preflight
+export async function OPTIONS() {
+  return NextResponse.json({}, { headers: corsHeaders });
+}
+
 export async function POST(request: NextRequest) {
   const body = await request.json();
   const { url, save } = body;
@@ -10,7 +22,7 @@ export async function POST(request: NextRequest) {
 
   if (!url || typeof url !== "string") {
     console.log("[extract/route] Error: URL is required");
-    return NextResponse.json({ error: "URL is required" }, { status: 400 });
+    return NextResponse.json({ error: "URL is required" }, { status: 400, headers: corsHeaders });
   }
 
   // Basic URL validation
@@ -18,7 +30,7 @@ export async function POST(request: NextRequest) {
     new URL(url);
   } catch {
     console.log("[extract/route] Error: Invalid URL format", { url });
-    return NextResponse.json({ error: "Invalid URL format" }, { status: 400 });
+    return NextResponse.json({ error: "Invalid URL format" }, { status: 400, headers: corsHeaders });
   }
 
   try {
@@ -63,15 +75,15 @@ export async function POST(request: NextRequest) {
         extracted,
         saved: true,
         recipe,
-      });
+      }, { headers: corsHeaders });
     }
 
     console.log("[extract/route] Returning extracted recipe (not saved)");
-    return NextResponse.json({ extracted, saved: false });
+    return NextResponse.json({ extracted, saved: false }, { headers: corsHeaders });
   } catch (error) {
     const message = error instanceof Error ? error.message : "Extraction failed";
     const stack = error instanceof Error ? error.stack : undefined;
     console.error("[extract/route] Error during extraction:", { message, stack, url });
-    return NextResponse.json({ error: message }, { status: 500 });
+    return NextResponse.json({ error: message }, { status: 500, headers: corsHeaders });
   }
 }
