@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CF83BFFFD3A71A59324D009 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47414014A21D07BCE65F02CE /* ShareViewController.swift */; };
+		401E176FEA4B4564F726E905 /* Share Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0A993C1520CFC40BE22F2D27 /* Share Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8E0E6FF52F0F201800E5C5FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E6FF42F0F201800E5C5FD /* AppDelegate.swift */; };
 		8E0E6FF72F0F201800E5C5FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E6FF62F0F201800E5C5FD /* SceneDelegate.swift */; };
 		8E0E6FFA2F0F201800E5C5FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6FF82F0F201800E5C5FD /* LaunchScreen.storyboard */; };
@@ -43,9 +45,17 @@
 		8E0E70502F0F201800E5C5FD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E70422F0F201800E5C5FD /* README.md */; };
 		8E0E70512F0F201800E5C5FD /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E70432F0F201800E5C5FD /* manifest.json */; };
 		8E0E70522F0F201800E5C5FD /* generate-icons.js in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E70442F0F201800E5C5FD /* generate-icons.js */; };
+		E331A8ED742745EC942B21D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C8B7364391FBD061E9088E /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5CD9C0785D7734E1A846C54F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E0E6FDE2F0F201700E5C5FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D78B9032CC5F0C682E78B9B4;
+			remoteInfo = "Share Extension";
+		};
 		8E0E70112F0F201800E5C5FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8E0E6FDE2F0F201700E5C5FD /* Project object */;
@@ -70,6 +80,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				8E0E70102F0F201800E5C5FD /* Recipe Book Clipper Extension.appex in Embed Foundation Extensions */,
+				401E176FEA4B4564F726E905 /* Share Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +99,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A993C1520CFC40BE22F2D27 /* Share Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Share Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34C8B7364391FBD061E9088E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		47414014A21D07BCE65F02CE /* ShareViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShareViewController.swift; path = "iOS (Share Extension)/ShareViewController.swift"; sourceTree = "<group>"; };
+		813A06F97F747C8FC3DBC83C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "iOS (Share Extension)/Info.plist"; sourceTree = "<group>"; };
 		8E0E6FE52F0F201700E5C5FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
 		8E0E6FE62F0F201700E5C5FD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		8E0E6FE72F0F201700E5C5FD /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
@@ -147,9 +162,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B47F8A5971FC79AE9F16D427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E331A8ED742745EC942B21D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		128024C3DAC6256B96C43D90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6073C057CE6C7BA2F82C5E7A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5598D8DDEC273001AF51555A /* iOS (Share Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				47414014A21D07BCE65F02CE /* ShareViewController.swift */,
+				813A06F97F747C8FC3DBC83C /* Info.plist */,
+			);
+			name = "iOS (Share Extension)";
+			path = "iOS (Share Extension)";
+			sourceTree = "<group>";
+		};
+		6073C057CE6C7BA2F82C5E7A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				34C8B7364391FBD061E9088E /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		8E0E6FDD2F0F201700E5C5FD = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +209,8 @@
 				8E0E70132F0F201800E5C5FD /* iOS (Extension) */,
 				8E0E701D2F0F201800E5C5FD /* macOS (Extension) */,
 				8E0E6FF22F0F201800E5C5FD /* Products */,
+				128024C3DAC6256B96C43D90 /* Frameworks */,
+				5598D8DDEC273001AF51555A /* iOS (Share Extension) */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,6 +251,7 @@
 				8E0E70032F0F201800E5C5FD /* Recipe Book Clipper.app */,
 				8E0E700F2F0F201800E5C5FD /* Recipe Book Clipper Extension.appex */,
 				8E0E70192F0F201800E5C5FD /* Recipe Book Clipper Extension.appex */,
+				0A993C1520CFC40BE22F2D27 /* Share Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,10 +325,9 @@
 			);
 			dependencies = (
 				8E0E70122F0F201800E5C5FD /* PBXTargetDependency */,
+				709952F8DE471727C705FB34 /* PBXTargetDependency */,
 			);
 			name = "Recipe Book Clipper (iOS)";
-			packageProductDependencies = (
-			);
 			productName = "Recipe Book Clipper (iOS)";
 			productReference = 8E0E6FF12F0F201800E5C5FD /* Recipe Book Clipper.app */;
 			productType = "com.apple.product-type.application";
@@ -296,8 +347,6 @@
 				8E0E701C2F0F201800E5C5FD /* PBXTargetDependency */,
 			);
 			name = "Recipe Book Clipper (macOS)";
-			packageProductDependencies = (
-			);
 			productName = "Recipe Book Clipper (macOS)";
 			productReference = 8E0E70032F0F201800E5C5FD /* Recipe Book Clipper.app */;
 			productType = "com.apple.product-type.application";
@@ -315,8 +364,6 @@
 			dependencies = (
 			);
 			name = "Recipe Book Clipper Extension (iOS)";
-			packageProductDependencies = (
-			);
 			productName = "Recipe Book Clipper Extension (iOS)";
 			productReference = 8E0E700F2F0F201800E5C5FD /* Recipe Book Clipper Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -334,10 +381,25 @@
 			dependencies = (
 			);
 			name = "Recipe Book Clipper Extension (macOS)";
-			packageProductDependencies = (
-			);
 			productName = "Recipe Book Clipper Extension (macOS)";
 			productReference = 8E0E70192F0F201800E5C5FD /* Recipe Book Clipper Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D78B9032CC5F0C682E78B9B4 /* Share Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02DD0E0ECB705CFFCB67845F /* Build configuration list for PBXNativeTarget "Share Extension" */;
+			buildPhases = (
+				04985315ED0B37911CBB6C65 /* Sources */,
+				B47F8A5971FC79AE9F16D427 /* Frameworks */,
+				DFB1F9E63353322D899CAAE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Share Extension";
+			productName = "Share Extension";
+			productReference = 0A993C1520CFC40BE22F2D27 /* Share Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -382,6 +444,7 @@
 				8E0E70022F0F201800E5C5FD /* Recipe Book Clipper (macOS) */,
 				8E0E700E2F0F201800E5C5FD /* Recipe Book Clipper Extension (iOS) */,
 				8E0E70182F0F201800E5C5FD /* Recipe Book Clipper Extension (macOS) */,
+				D78B9032CC5F0C682E78B9B4 /* Share Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -442,9 +505,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFB1F9E63353322D899CAAE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		04985315ED0B37911CBB6C65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF83BFFFD3A71A59324D009 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8E0E6FED2F0F201800E5C5FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -483,6 +561,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		709952F8DE471727C705FB34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Share Extension";
+			target = D78B9032CC5F0C682E78B9B4 /* Share Extension */;
+			targetProxy = 5CD9C0785D7734E1A846C54F /* PBXContainerItemProxy */;
+		};
 		8E0E70122F0F201800E5C5FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8E0E700E2F0F201800E5C5FD /* Recipe Book Clipper Extension (iOS) */;
@@ -531,6 +615,23 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0F68B3B4E07A866DB25C06EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "iOS (Share Extension)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.recipebook.clipper.share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		8E0E702D2F0F201800E5C5FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -945,9 +1046,36 @@
 			};
 			name = Release;
 		};
+		DBEEECF4C38AC7105BE3B2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "iOS (Share Extension)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.recipebook.clipper.share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		02DD0E0ECB705CFFCB67845F /* Build configuration list for PBXNativeTarget "Share Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEEECF4C38AC7105BE3B2CE /* Release */,
+				0F68B3B4E07A866DB25C06EA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8E0E6FE12F0F201700E5C5FD /* Build configuration list for PBXProject "Recipe Book Clipper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
