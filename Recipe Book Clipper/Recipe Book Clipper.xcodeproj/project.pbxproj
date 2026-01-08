@@ -1,0 +1,999 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E0E6FF52F0F201800E5C5FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E6FF42F0F201800E5C5FD /* AppDelegate.swift */; };
+		8E0E6FF72F0F201800E5C5FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E6FF62F0F201800E5C5FD /* SceneDelegate.swift */; };
+		8E0E6FFA2F0F201800E5C5FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6FF82F0F201800E5C5FD /* LaunchScreen.storyboard */; };
+		8E0E6FFD2F0F201800E5C5FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6FFB2F0F201800E5C5FD /* Main.storyboard */; };
+		8E0E70062F0F201800E5C5FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E70052F0F201800E5C5FD /* AppDelegate.swift */; };
+		8E0E70092F0F201800E5C5FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E70072F0F201800E5C5FD /* Main.storyboard */; };
+		8E0E70102F0F201800E5C5FD /* Recipe Book Clipper Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8E0E700F2F0F201800E5C5FD /* Recipe Book Clipper Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8E0E701A2F0F201800E5C5FD /* Recipe Book Clipper Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8E0E70192F0F201800E5C5FD /* Recipe Book Clipper Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8E0E701F2F0F201800E5C5FD /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6FE42F0F201700E5C5FD /* Main.html */; };
+		8E0E70202F0F201800E5C5FD /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6FE42F0F201700E5C5FD /* Main.html */; };
+		8E0E70212F0F201800E5C5FD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6FE62F0F201700E5C5FD /* Icon.png */; };
+		8E0E70222F0F201800E5C5FD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6FE62F0F201700E5C5FD /* Icon.png */; };
+		8E0E70232F0F201800E5C5FD /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6FE72F0F201700E5C5FD /* Style.css */; };
+		8E0E70242F0F201800E5C5FD /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6FE72F0F201700E5C5FD /* Style.css */; };
+		8E0E70252F0F201800E5C5FD /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6FE82F0F201700E5C5FD /* Script.js */; };
+		8E0E70262F0F201800E5C5FD /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6FE82F0F201700E5C5FD /* Script.js */; };
+		8E0E70272F0F201800E5C5FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E6FE92F0F201700E5C5FD /* ViewController.swift */; };
+		8E0E70282F0F201800E5C5FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E6FE92F0F201700E5C5FD /* ViewController.swift */; };
+		8E0E70292F0F201800E5C5FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6FEA2F0F201800E5C5FD /* Assets.xcassets */; };
+		8E0E702A2F0F201800E5C5FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6FEA2F0F201800E5C5FD /* Assets.xcassets */; };
+		8E0E702B2F0F201800E5C5FD /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E6FEC2F0F201800E5C5FD /* SafariWebExtensionHandler.swift */; };
+		8E0E702C2F0F201800E5C5FD /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E6FEC2F0F201800E5C5FD /* SafariWebExtensionHandler.swift */; };
+		8E0E70452F0F201800E5C5FD /* icon16.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E703E2F0F201800E5C5FD /* icon16.png */; };
+		8E0E70462F0F201800E5C5FD /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E703F2F0F201800E5C5FD /* background.js */; };
+		8E0E70472F0F201800E5C5FD /* icon48.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E70402F0F201800E5C5FD /* icon48.png */; };
+		8E0E70482F0F201800E5C5FD /* icon128.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E70412F0F201800E5C5FD /* icon128.png */; };
+		8E0E70492F0F201800E5C5FD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E70422F0F201800E5C5FD /* README.md */; };
+		8E0E704A2F0F201800E5C5FD /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E70432F0F201800E5C5FD /* manifest.json */; };
+		8E0E704B2F0F201800E5C5FD /* generate-icons.js in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E70442F0F201800E5C5FD /* generate-icons.js */; };
+		8E0E704C2F0F201800E5C5FD /* icon16.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E703E2F0F201800E5C5FD /* icon16.png */; };
+		8E0E704D2F0F201800E5C5FD /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E703F2F0F201800E5C5FD /* background.js */; };
+		8E0E704E2F0F201800E5C5FD /* icon48.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E70402F0F201800E5C5FD /* icon48.png */; };
+		8E0E704F2F0F201800E5C5FD /* icon128.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E70412F0F201800E5C5FD /* icon128.png */; };
+		8E0E70502F0F201800E5C5FD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E70422F0F201800E5C5FD /* README.md */; };
+		8E0E70512F0F201800E5C5FD /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E70432F0F201800E5C5FD /* manifest.json */; };
+		8E0E70522F0F201800E5C5FD /* generate-icons.js in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E70442F0F201800E5C5FD /* generate-icons.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E0E70112F0F201800E5C5FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E0E6FDE2F0F201700E5C5FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E0E700E2F0F201800E5C5FD;
+			remoteInfo = "Recipe Book Clipper Extension (iOS)";
+		};
+		8E0E701B2F0F201800E5C5FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E0E6FDE2F0F201700E5C5FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E0E70182F0F201800E5C5FD;
+			remoteInfo = "Recipe Book Clipper Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8E0E70322F0F201800E5C5FD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8E0E70102F0F201800E5C5FD /* Recipe Book Clipper Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E0E70392F0F201800E5C5FD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8E0E701A2F0F201800E5C5FD /* Recipe Book Clipper Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8E0E6FE52F0F201700E5C5FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		8E0E6FE62F0F201700E5C5FD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8E0E6FE72F0F201700E5C5FD /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		8E0E6FE82F0F201700E5C5FD /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		8E0E6FE92F0F201700E5C5FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E0E6FEA2F0F201800E5C5FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E0E6FEC2F0F201800E5C5FD /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		8E0E6FF12F0F201800E5C5FD /* Recipe Book Clipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe Book Clipper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E0E6FF42F0F201800E5C5FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E0E6FF62F0F201800E5C5FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8E0E6FF92F0F201800E5C5FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E0E6FFC2F0F201800E5C5FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E0E6FFE2F0F201800E5C5FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E0E70032F0F201800E5C5FD /* Recipe Book Clipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe Book Clipper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E0E70052F0F201800E5C5FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E0E70082F0F201800E5C5FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E0E700A2F0F201800E5C5FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E0E700F2F0F201800E5C5FD /* Recipe Book Clipper Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Recipe Book Clipper Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E0E70142F0F201800E5C5FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E0E70192F0F201800E5C5FD /* Recipe Book Clipper Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Recipe Book Clipper Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E0E701E2F0F201800E5C5FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E0E703E2F0F201800E5C5FD /* icon16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon16.png; path = "../../chrome-extension/icon16.png"; sourceTree = "<group>"; };
+		8E0E703F2F0F201800E5C5FD /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = "../../chrome-extension/background.js"; sourceTree = "<group>"; };
+		8E0E70402F0F201800E5C5FD /* icon48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon48.png; path = "../../chrome-extension/icon48.png"; sourceTree = "<group>"; };
+		8E0E70412F0F201800E5C5FD /* icon128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon128.png; path = "../../chrome-extension/icon128.png"; sourceTree = "<group>"; };
+		8E0E70422F0F201800E5C5FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../chrome-extension/README.md"; sourceTree = "<group>"; };
+		8E0E70432F0F201800E5C5FD /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = "../../chrome-extension/manifest.json"; sourceTree = "<group>"; };
+		8E0E70442F0F201800E5C5FD /* generate-icons.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "generate-icons.js"; path = "../../chrome-extension/generate-icons.js"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E0E6FEE2F0F201800E5C5FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E0E70002F0F201800E5C5FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E0E700C2F0F201800E5C5FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E0E70162F0F201800E5C5FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E0E6FDD2F0F201700E5C5FD = {
+			isa = PBXGroup;
+			children = (
+				8E0E6FE22F0F201700E5C5FD /* Shared (App) */,
+				8E0E6FEB2F0F201800E5C5FD /* Shared (Extension) */,
+				8E0E6FF32F0F201800E5C5FD /* iOS (App) */,
+				8E0E70042F0F201800E5C5FD /* macOS (App) */,
+				8E0E70132F0F201800E5C5FD /* iOS (Extension) */,
+				8E0E701D2F0F201800E5C5FD /* macOS (Extension) */,
+				8E0E6FF22F0F201800E5C5FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E0E6FE22F0F201700E5C5FD /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				8E0E6FE92F0F201700E5C5FD /* ViewController.swift */,
+				8E0E6FEA2F0F201800E5C5FD /* Assets.xcassets */,
+				8E0E6FE32F0F201700E5C5FD /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		8E0E6FE32F0F201700E5C5FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E0E6FE42F0F201700E5C5FD /* Main.html */,
+				8E0E6FE62F0F201700E5C5FD /* Icon.png */,
+				8E0E6FE72F0F201700E5C5FD /* Style.css */,
+				8E0E6FE82F0F201700E5C5FD /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8E0E6FEB2F0F201800E5C5FD /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				8E0E703D2F0F201800E5C5FD /* Resources */,
+				8E0E6FEC2F0F201800E5C5FD /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		8E0E6FF22F0F201800E5C5FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E0E6FF12F0F201800E5C5FD /* Recipe Book Clipper.app */,
+				8E0E70032F0F201800E5C5FD /* Recipe Book Clipper.app */,
+				8E0E700F2F0F201800E5C5FD /* Recipe Book Clipper Extension.appex */,
+				8E0E70192F0F201800E5C5FD /* Recipe Book Clipper Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E0E6FF32F0F201800E5C5FD /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				8E0E6FF42F0F201800E5C5FD /* AppDelegate.swift */,
+				8E0E6FF62F0F201800E5C5FD /* SceneDelegate.swift */,
+				8E0E6FF82F0F201800E5C5FD /* LaunchScreen.storyboard */,
+				8E0E6FFB2F0F201800E5C5FD /* Main.storyboard */,
+				8E0E6FFE2F0F201800E5C5FD /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		8E0E70042F0F201800E5C5FD /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				8E0E70052F0F201800E5C5FD /* AppDelegate.swift */,
+				8E0E70072F0F201800E5C5FD /* Main.storyboard */,
+				8E0E700A2F0F201800E5C5FD /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		8E0E70132F0F201800E5C5FD /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				8E0E70142F0F201800E5C5FD /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		8E0E701D2F0F201800E5C5FD /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				8E0E701E2F0F201800E5C5FD /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		8E0E703D2F0F201800E5C5FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E0E703E2F0F201800E5C5FD /* icon16.png */,
+				8E0E703F2F0F201800E5C5FD /* background.js */,
+				8E0E70402F0F201800E5C5FD /* icon48.png */,
+				8E0E70412F0F201800E5C5FD /* icon128.png */,
+				8E0E70422F0F201800E5C5FD /* README.md */,
+				8E0E70432F0F201800E5C5FD /* manifest.json */,
+				8E0E70442F0F201800E5C5FD /* generate-icons.js */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E0E6FF02F0F201800E5C5FD /* Recipe Book Clipper (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E0E70332F0F201800E5C5FD /* Build configuration list for PBXNativeTarget "Recipe Book Clipper (iOS)" */;
+			buildPhases = (
+				8E0E6FED2F0F201800E5C5FD /* Sources */,
+				8E0E6FEE2F0F201800E5C5FD /* Frameworks */,
+				8E0E6FEF2F0F201800E5C5FD /* Resources */,
+				8E0E70322F0F201800E5C5FD /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E0E70122F0F201800E5C5FD /* PBXTargetDependency */,
+			);
+			name = "Recipe Book Clipper (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Recipe Book Clipper (iOS)";
+			productReference = 8E0E6FF12F0F201800E5C5FD /* Recipe Book Clipper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E0E70022F0F201800E5C5FD /* Recipe Book Clipper (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E0E703A2F0F201800E5C5FD /* Build configuration list for PBXNativeTarget "Recipe Book Clipper (macOS)" */;
+			buildPhases = (
+				8E0E6FFF2F0F201800E5C5FD /* Sources */,
+				8E0E70002F0F201800E5C5FD /* Frameworks */,
+				8E0E70012F0F201800E5C5FD /* Resources */,
+				8E0E70392F0F201800E5C5FD /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E0E701C2F0F201800E5C5FD /* PBXTargetDependency */,
+			);
+			name = "Recipe Book Clipper (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Recipe Book Clipper (macOS)";
+			productReference = 8E0E70032F0F201800E5C5FD /* Recipe Book Clipper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E0E700E2F0F201800E5C5FD /* Recipe Book Clipper Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E0E702F2F0F201800E5C5FD /* Build configuration list for PBXNativeTarget "Recipe Book Clipper Extension (iOS)" */;
+			buildPhases = (
+				8E0E700B2F0F201800E5C5FD /* Sources */,
+				8E0E700C2F0F201800E5C5FD /* Frameworks */,
+				8E0E700D2F0F201800E5C5FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Recipe Book Clipper Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Recipe Book Clipper Extension (iOS)";
+			productReference = 8E0E700F2F0F201800E5C5FD /* Recipe Book Clipper Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8E0E70182F0F201800E5C5FD /* Recipe Book Clipper Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E0E70362F0F201800E5C5FD /* Build configuration list for PBXNativeTarget "Recipe Book Clipper Extension (macOS)" */;
+			buildPhases = (
+				8E0E70152F0F201800E5C5FD /* Sources */,
+				8E0E70162F0F201800E5C5FD /* Frameworks */,
+				8E0E70172F0F201800E5C5FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Recipe Book Clipper Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Recipe Book Clipper Extension (macOS)";
+			productReference = 8E0E70192F0F201800E5C5FD /* Recipe Book Clipper Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E0E6FDE2F0F201700E5C5FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					8E0E6FF02F0F201800E5C5FD = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					8E0E70022F0F201800E5C5FD = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					8E0E700E2F0F201800E5C5FD = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					8E0E70182F0F201800E5C5FD = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 8E0E6FE12F0F201700E5C5FD /* Build configuration list for PBXProject "Recipe Book Clipper" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E0E6FDD2F0F201700E5C5FD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8E0E6FF22F0F201800E5C5FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E0E6FF02F0F201800E5C5FD /* Recipe Book Clipper (iOS) */,
+				8E0E70022F0F201800E5C5FD /* Recipe Book Clipper (macOS) */,
+				8E0E700E2F0F201800E5C5FD /* Recipe Book Clipper Extension (iOS) */,
+				8E0E70182F0F201800E5C5FD /* Recipe Book Clipper Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E0E6FEF2F0F201800E5C5FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0E70212F0F201800E5C5FD /* Icon.png in Resources */,
+				8E0E6FFA2F0F201800E5C5FD /* LaunchScreen.storyboard in Resources */,
+				8E0E701F2F0F201800E5C5FD /* Main.html in Resources */,
+				8E0E70252F0F201800E5C5FD /* Script.js in Resources */,
+				8E0E70292F0F201800E5C5FD /* Assets.xcassets in Resources */,
+				8E0E6FFD2F0F201800E5C5FD /* Main.storyboard in Resources */,
+				8E0E70232F0F201800E5C5FD /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E0E70012F0F201800E5C5FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0E70222F0F201800E5C5FD /* Icon.png in Resources */,
+				8E0E70242F0F201800E5C5FD /* Style.css in Resources */,
+				8E0E70092F0F201800E5C5FD /* Main.storyboard in Resources */,
+				8E0E70262F0F201800E5C5FD /* Script.js in Resources */,
+				8E0E702A2F0F201800E5C5FD /* Assets.xcassets in Resources */,
+				8E0E70202F0F201800E5C5FD /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E0E700D2F0F201800E5C5FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0E704D2F0F201800E5C5FD /* background.js in Resources */,
+				8E0E704C2F0F201800E5C5FD /* icon16.png in Resources */,
+				8E0E70502F0F201800E5C5FD /* README.md in Resources */,
+				8E0E704F2F0F201800E5C5FD /* icon128.png in Resources */,
+				8E0E70512F0F201800E5C5FD /* manifest.json in Resources */,
+				8E0E704E2F0F201800E5C5FD /* icon48.png in Resources */,
+				8E0E70522F0F201800E5C5FD /* generate-icons.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E0E70172F0F201800E5C5FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0E70462F0F201800E5C5FD /* background.js in Resources */,
+				8E0E70452F0F201800E5C5FD /* icon16.png in Resources */,
+				8E0E70492F0F201800E5C5FD /* README.md in Resources */,
+				8E0E70482F0F201800E5C5FD /* icon128.png in Resources */,
+				8E0E704A2F0F201800E5C5FD /* manifest.json in Resources */,
+				8E0E70472F0F201800E5C5FD /* icon48.png in Resources */,
+				8E0E704B2F0F201800E5C5FD /* generate-icons.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E0E6FED2F0F201800E5C5FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0E70272F0F201800E5C5FD /* ViewController.swift in Sources */,
+				8E0E6FF52F0F201800E5C5FD /* AppDelegate.swift in Sources */,
+				8E0E6FF72F0F201800E5C5FD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E0E6FFF2F0F201800E5C5FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0E70282F0F201800E5C5FD /* ViewController.swift in Sources */,
+				8E0E70062F0F201800E5C5FD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E0E700B2F0F201800E5C5FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0E702B2F0F201800E5C5FD /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E0E70152F0F201800E5C5FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0E702C2F0F201800E5C5FD /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E0E70122F0F201800E5C5FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E0E700E2F0F201800E5C5FD /* Recipe Book Clipper Extension (iOS) */;
+			targetProxy = 8E0E70112F0F201800E5C5FD /* PBXContainerItemProxy */;
+		};
+		8E0E701C2F0F201800E5C5FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E0E70182F0F201800E5C5FD /* Recipe Book Clipper Extension (macOS) */;
+			targetProxy = 8E0E701B2F0F201800E5C5FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E0E6FE42F0F201700E5C5FD /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E0E6FE52F0F201700E5C5FD /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		8E0E6FF82F0F201800E5C5FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E0E6FF92F0F201800E5C5FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8E0E6FFB2F0F201800E5C5FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E0E6FFC2F0F201800E5C5FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E0E70072F0F201800E5C5FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E0E70082F0F201800E5C5FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E0E702D2F0F201800E5C5FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E0E702E2F0F201800E5C5FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		8E0E70302F0F201800E5C5FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Recipe Book Clipper Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.recipebook.clipper.Extension;
+				PRODUCT_NAME = "Recipe Book Clipper Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E0E70312F0F201800E5C5FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Recipe Book Clipper Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.recipebook.clipper.Extension;
+				PRODUCT_NAME = "Recipe Book Clipper Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E0E70342F0F201800E5C5FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Recipe Book Clipper";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.recipebook.clipper;
+				PRODUCT_NAME = "Recipe Book Clipper";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E0E70352F0F201800E5C5FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Recipe Book Clipper";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.recipebook.clipper;
+				PRODUCT_NAME = "Recipe Book Clipper";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E0E70372F0F201800E5C5FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Recipe Book Clipper Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.recipebook.clipper.Extension;
+				PRODUCT_NAME = "Recipe Book Clipper Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8E0E70382F0F201800E5C5FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Recipe Book Clipper Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.recipebook.clipper.Extension;
+				PRODUCT_NAME = "Recipe Book Clipper Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8E0E703B2F0F201800E5C5FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Recipe Book Clipper";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.recipebook.clipper;
+				PRODUCT_NAME = "Recipe Book Clipper";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8E0E703C2F0F201800E5C5FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Recipe Book Clipper";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.recipebook.clipper;
+				PRODUCT_NAME = "Recipe Book Clipper";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E0E6FE12F0F201700E5C5FD /* Build configuration list for PBXProject "Recipe Book Clipper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E0E702D2F0F201800E5C5FD /* Debug */,
+				8E0E702E2F0F201800E5C5FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E0E702F2F0F201800E5C5FD /* Build configuration list for PBXNativeTarget "Recipe Book Clipper Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E0E70302F0F201800E5C5FD /* Debug */,
+				8E0E70312F0F201800E5C5FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E0E70332F0F201800E5C5FD /* Build configuration list for PBXNativeTarget "Recipe Book Clipper (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E0E70342F0F201800E5C5FD /* Debug */,
+				8E0E70352F0F201800E5C5FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E0E70362F0F201800E5C5FD /* Build configuration list for PBXNativeTarget "Recipe Book Clipper Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E0E70372F0F201800E5C5FD /* Debug */,
+				8E0E70382F0F201800E5C5FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E0E703A2F0F201800E5C5FD /* Build configuration list for PBXNativeTarget "Recipe Book Clipper (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E0E703B2F0F201800E5C5FD /* Debug */,
+				8E0E703C2F0F201800E5C5FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E0E6FDE2F0F201700E5C5FD /* Project object */;
+}
